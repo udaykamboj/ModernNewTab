@@ -116,4 +116,3 @@ No network permissions are required - all data stays local to your browser.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-**
