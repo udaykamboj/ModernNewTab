@@ -81,8 +81,6 @@ const spotlightBackgrounds = [
   "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop", // Alpine scenery (replacing #8)
   "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop", // Forest trees
   "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1920&h=1080&fit=crop", // Ocean view (replacing #10)
-  "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1920&h=1080&fit=crop", // Mountain vista (replacing #11)
-  "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1920&h=1080&fit=crop"  // Countryside
 ];
 
 const emojiIcons = [
