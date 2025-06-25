@@ -20,12 +20,6 @@ quicktab-extension/
 
 ## 🛠️ Setup Instructions
 
-### Prerequisites
-
-- Google Chrome/Edge/Edge browser
-- Basic text editor or IDE
-
-
 ### Installation for Development
 
 1. **Clone or Download the Project**
@@ -35,13 +29,6 @@ git clone <repository-url>
 cd quicktab-extension
 ```
 
-2. **Prepare Extension Icons**
-
-1. Create `icons/` folder in the project root
-2. Add icon files: `icon16.png`, `icon32.png`, `icon48.png`, `icon128.png`
-3. Icons should be square PNG files at specified dimensions
-
-
 3. **Load Extension in Chrome/Edge**
 
 1. Open Chrome/Edge and navigate to `Chrome/Edge://extensions/`
@@ -49,13 +36,6 @@ cd quicktab-extension
 3. Click **"Load unpacked"**
 4. Select your `quicktab-extension` folder
 5. Extension will appear in your extensions list
-
-
-4. **Test the Extension**
-
-1. Open a new tab in Chrome/Edge
-2. You should see the QuickTab interface instead of the default new tab
-3. Click "Customize Settings" to configure your preferences
 
 
 ## 🔧 Development
