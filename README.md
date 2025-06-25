@@ -1,6 +1,6 @@
 
 # TabDash - Modern New Tab Extension
-TabDash replaces Chrome's/Edge's default new tab with a clean, customizable interface featuring quick links, search functionality, and stunning backgrounds.
+TabDash replaces Chrome/Edge's/Edge's default new tab with a clean, customizable interface featuring quick links, search functionality, and stunning backgrounds.
 
 ## 📁 Project Structure
 
@@ -21,7 +21,7 @@ quicktab-extension/
 
 ### Prerequisites
 
-- Google Chrome/Edge browser
+- Google Chrome/Edge/Edge browser
 - Basic text editor or IDE
 
 
@@ -43,9 +43,9 @@ cd quicktab-extension
 
 
 
-3. **Load Extension in Chrome**
+3. **Load Extension in Chrome/Edge**
 
-1. Open Chrome and navigate to `chrome://extensions/`
+1. Open Chrome/Edge and navigate to `Chrome/Edge://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)
 3. Click **"Load unpacked"**
 4. Select your `quicktab-extension` folder
@@ -55,7 +55,7 @@ cd quicktab-extension
 
 4. **Test the Extension**
 
-1. Open a new tab in Chrome
+1. Open a new tab in Chrome/Edge
 2. You should see the QuickTab interface instead of the default new tab
 3. Click "Customize Settings" to configure your preferences
 
@@ -71,7 +71,7 @@ cd quicktab-extension
 
 - Extension configuration and permissions
 - Defines new tab override and storage permissions
-- Chrome extension metadata
+- Chrome/Edge extension metadata
 
 
 #### `index.html`
@@ -91,7 +91,7 @@ cd quicktab-extension
 
 #### `script.js`
 
-- Chrome storage API integration
+- Chrome/Edge storage API integration
 - Event handling for all UI interactions
 - Settings management and validation
 - Background image handling
@@ -102,7 +102,7 @@ cd quicktab-extension
 1. **Edit the code** in your preferred editor
 2. **Reload the extension**:
 
-1. Go to `chrome://extensions/`
+1. Go to `Chrome/Edge://extensions/`
 2. Click the refresh icon on your extension
 
 
@@ -157,12 +157,12 @@ const defaultSettings = {
 
 - Check `manifest.json` syntax with a JSON validator
 - Ensure all file paths in manifest exist
-- Check Chrome extensions page for error messages
+- Check Chrome/Edge extensions page for error messages
 
 
 **New tab not showing:**
 
-- Verify `chrome_url_overrides` in manifest.json
+- Verify `Chrome/Edge_url_overrides` in manifest.json
 - Check if another extension is overriding new tab
 - Reload the extension after changes
 
@@ -170,7 +170,7 @@ const defaultSettings = {
 **Settings not saving:**
 
 - Open browser console (F12) and check for JavaScript errors
-- Verify Chrome storage permissions in manifest
+- Verify Chrome/Edge storage permissions in manifest
 - Test with simple console.log statements
 
 
@@ -197,15 +197,15 @@ Access debugging tools:
 2. **Update version** in `manifest.json`
 3. **Optimize images** and remove any debug code
 4. **Create ZIP file** of the entire project folder
-5. **Upload to Chrome Web Store** or distribute as needed
+5. **Upload to Chrome/Edge Web Store** or distribute as needed
 
 
 ## 🔒 Permissions Explained
 
-The extension requires these Chrome permissions:
+The extension requires these Chrome/Edge permissions:
 
 - **`storage`** - Save user settings and bookmarks locally
-- **`chrome_url_overrides.newtab`** - Replace default new tab page
+- **`Chrome/Edge_url_overrides.newtab`** - Replace default new tab page
 
 
 No network permissions are required - all data stays local to your browser.
