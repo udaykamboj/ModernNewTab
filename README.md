@@ -35,13 +35,11 @@ git clone <repository-url>
 cd quicktab-extension
 ```
 
-
 2. **Prepare Extension Icons**
 
 1. Create `icons/` folder in the project root
 2. Add icon files: `icon16.png`, `icon32.png`, `icon48.png`, `icon128.png`
 3. Icons should be square PNG files at specified dimensions
-
 
 
 3. **Load Extension in Chrome/Edge**
@@ -53,7 +51,6 @@ cd quicktab-extension
 5. Extension will appear in your extensions list
 
 
-
 4. **Test the Extension**
 
 1. Open a new tab in Chrome/Edge
@@ -61,42 +58,7 @@ cd quicktab-extension
 3. Click "Customize Settings" to configure your preferences
 
 
-
-
-
 ## 🔧 Development
-
-### Key Files Overview
-
-#### `manifest.json`
-
-- Extension configuration and permissions
-- Defines new tab override and storage permissions
-- Chrome/Edge extension metadata
-
-
-#### `index.html`
-
-- Complete UI structure with modals and forms
-- Semantic HTML with accessibility features
-- No external dependencies
-
-
-#### `styles.css`
-
-- Modern CSS with flexbox/grid layouts
-- Responsive design for mobile and desktop
-- Dark theme support for backgrounds
-- Component-based styling approach
-
-
-#### `script.js`
-
-- Chrome/Edge storage API integration
-- Event handling for all UI interactions
-- Settings management and validation
-- Background image handling
-
 
 ### Making Changes
 
@@ -105,8 +67,6 @@ cd quicktab-extension
 
 1. Go to `Chrome/Edge://extensions/`
 2. Click the refresh icon on your extension
-
-
 
 3. **Open a new tab** to see changes
 4. **Check browser console** for any errors (F12 → Console)
@@ -208,17 +168,7 @@ The extension requires these Chrome/Edge permissions:
 - **`storage`** - Save user settings and bookmarks locally
 - **`Chrome/Edge_url_overrides.newtab`** - Replace default new tab page
 
-
 No network permissions are required - all data stays local to your browser.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes and test thoroughly
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
 
 
 ## 📄 License
