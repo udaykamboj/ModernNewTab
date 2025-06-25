@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="app">
+        <!-- Loading state -->
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+        </div>
+        
+        <!-- Main content -->
+        <div id="main-content" class="main-content hidden">
+            <!-- Time and Date -->
+            <div class="time-section">
+                <h1 id="time" class="time-display"></h1>
+                <p id="date" class="date-display"></p>
+            </div>
+
+            <!-- Search Bar -->
+            <form id="search-form" class="search-form">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search"
+                    />
+                    <span class="search-hint">Press Enter</span>
+                </div>
+            </form>
+
+            <!-- Quick Links -->
+            <div id="quick-links-container" class="quick-links-container">
+                <div id="quick-links-grid" class="quick-links-grid">
+                    <!-- Quick links will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Settings Button -->
+            <button id="settings-btn" class="settings-btn">
+                <svg class="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                </svg>
+                Customize Settings
+            </button>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settings-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Settings</h2>
+                    <button id="close-settings" class="close-btn">&times;</button>
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="general">General</button>
+                    <button class="tab-btn" data-tab="background">Background</button>
+                    <button class="tab-btn" data-tab="quicklinks">Quick Links</button>
+                    <button class="tab-btn" data-tab="search">Search</button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- General Tab -->
+                    <div id="general-tab" class="tab-panel active">
+                        <h3>Display Options</h3>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox" id="show-quick-links" checked>
+                                <span>Show Quick Links</span>
+                            </label>
+                            <p class="setting-description">Toggle the quick links section on your new tab page</p>
+                        </div>
+                    </div>
+
+                    <!-- Background Tab -->
+                    <div id="background-tab" class="tab-panel">
+                        <h3>Background</h3>
+                        <div class="setting-item">
+                            <select id="background-type">
+                                <option value="none">Default Light Grey</option>
+                                <option value="upload">Custom Image</option>
+                                <option value="spotlight">Spotlight Backgrounds</option>
+                            </select>
+                        </div>
+                        
+                        <div id="upload-section" class="setting-item hidden">
+                            <label for="background-upload">Upload Image</label>
+                            <input type="file" id="background-upload" accept="image/*">
+                            <div id="current-upload" class="current-background hidden">
+                                <p>Current custom background:</p>
+                                <img id="current-upload-preview" src="/placeholder.svg" alt="Current background" class="background-preview">
+                                <button id="remove-upload" class="btn-secondary small">Remove</button>
+                            </div>
+                        </div>
+                        
+                        <div id="spotlight-section" class="setting-item hidden">
+                            <label>Choose Spotlight Background</label>
+                            <div id="spotlight-grid" class="spotlight-grid">
+                                <!-- Spotlight images will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Tab -->
+                    <div id="quicklinks-tab" class="tab-panel">
+                        <div class="tab-header">
+                            <h3>Quick Links</h3>
+                            <button id="add-bookmark" class="add-btn">+ Add New Quick Link</button>
+                        </div>
+                        <div id="bookmarks-list" class="bookmarks-list">
+                            <!-- Bookmarks will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Search Tab -->
+                    <div id="search-tab" class="tab-panel">
+                        <h3>Search Engine</h3>
+                        <div class="setting-item">
+                            <label for="search-engine">Choose your default search engine</label>
+                            <select id="search-engine">
+                                <option value="Google">Google</option>
+                                <option value="Bing">Bing</option>
+                                <option value="DuckDuckGo">DuckDuckGo</option>
+                                <option value="Yahoo">Yahoo</option>
+                                <option value="Custom">Custom</option>
+                            </select>
+                        </div>
+                        
+                        <div id="custom-search-section" class="setting-item hidden">
+                            <label for="custom-search-url">Custom search engine URL</label>
+                            <div class="input-group">
+                                <input type="text" id="custom-search-url" placeholder="https://example.com/search?q=">
+                                <button id="save-custom-search">Save</button>
+                            </div>
+                            <p class="setting-description">Enter the search URL. The search query will be appended to the end.</p>
+                        </div>
+                        
+                        <div class="current-search">
+                            Current: <span id="current-search-engine">Bing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="export-settings" class="btn-secondary">Export Settings</button>
+                    <button id="import-settings" class="btn-secondary">Import Settings</button>
+                    <input type="file" id="import-file" accept=".json" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Add/Edit Bookmark Modal -->
+        <div id="bookmark-modal" class="modal hidden">
+            <div class="modal-content small">
+                <div class="modal-header">
+                    <h2 id="bookmark-modal-title">Add Quick Link</h2>
+                    <button id="close-bookmark-modal" class="close-btn">&times;</button>
+                </div>
+                
+                <div class="bookmark-form" style="margin:10px">
+                    <div class="form-group">
+                        <label for="bookmark-name">Name</label>
+                        <input type="text" id="bookmark-name" placeholder="Example">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookmark-url">URL</label>
+                        <input type="text" id="bookmark-url" placeholder="example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Icon</label>
+                        <div id="emoji-grid" class="emoji-grid">
+                            <!-- Emoji icons will be populated by JavaScript -->
+                        </div>
+                        <p class="selected-emoji">Selected: <span id="selected-emoji">🌐</span></p>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button id="save-bookmark" class="btn-primary">Save</button>
+                    <button id="cancel-bookmark" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
