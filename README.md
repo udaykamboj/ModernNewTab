@@ -22,14 +22,14 @@ quicktab-extension/
 
 ### Installation for Development
 
-1. **Clone or Download the Project**
+**Clone or Download the Project**
 
 ```shellscript
 git clone <repository-url>
 cd quicktab-extension
 ```
 
-3. **Load Extension in Chrome/Edge**
+**Load Extension in Chrome/Edge**
 
 1. Open Chrome/Edge and navigate to `Chrome/Edge://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)
@@ -39,18 +39,6 @@ cd quicktab-extension
 
 
 ## 🔧 Development
-
-### Making Changes
-
-1. **Edit the code** in your preferred editor
-2. **Reload the extension**:
-
-1. Go to `Chrome/Edge://extensions/`
-2. Click the refresh icon on your extension
-
-3. **Open a new tab** to see changes
-4. **Check browser console** for any errors (F12 → Console)
-
 
 ### Common Development Tasks
 
