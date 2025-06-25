@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9cecf532-f967-4a73-bb6a-80cd775676eb)
+**![image](https://github.com/user-attachments/assets/9cecf532-f967-4a73-bb6a-80cd775676eb)
 
 # TabDash - Modern New Tab Extension
 TabDash replaces Chrome/Edge's/Edge's default new tab with a clean, customizable interface featuring quick links, search functionality, and stunning backgrounds.
@@ -20,16 +20,14 @@ quicktab-extension/
 
 ## 🛠️ Setup Instructions
 
-### Installation for Development
-
-**Clone or Download the Project**
+### Clone or Download the Project
 
 ```shellscript
 git clone <repository-url>
 cd quicktab-extension
 ```
 
-**Load Extension in Chrome/Edge**
+### Load Extension in Chrome/Edge
 
 1. Open Chrome/Edge and navigate to `Chrome/Edge://extensions/`
 2. Enable **Developer mode** (toggle in top-right corner)
@@ -39,8 +37,6 @@ cd quicktab-extension
 
 
 ## 🔧 Development
-
-### Common Development Tasks
 
 **Adding New Search Engines:**
 
@@ -80,8 +76,6 @@ const defaultSettings = {
 
 ## 🐛 Debugging
 
-### Common Issues
-
 **Extension not loading:**
 
 - Check `manifest.json` syntax with a JSON validator
@@ -109,26 +103,6 @@ const defaultSettings = {
 - Verify CORS headers for external images
 - Test with placeholder images first
 
-
-### Development Console
-
-Access debugging tools:
-
-1. Open new tab with your extension
-2. Press F12 to open Developer Tools
-3. Check Console tab for JavaScript errors
-4. Use Network tab to debug image loading issues
-
-
-## 📦 Building for Production
-
-1. **Test thoroughly** in development mode
-2. **Update version** in `manifest.json`
-3. **Optimize images** and remove any debug code
-4. **Create ZIP file** of the entire project folder
-5. **Upload to Chrome/Edge Web Store** or distribute as needed
-
-
 ## 🔒 Permissions Explained
 
 The extension requires these Chrome/Edge permissions:
@@ -142,3 +116,4 @@ No network permissions are required - all data stays local to your browser.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+**
