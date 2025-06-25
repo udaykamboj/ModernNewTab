@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e38a347b-0312-4590-91a1-6342acd9214b)
+![image](https://github.com/user-attachments/assets/9cecf532-f967-4a73-bb6a-80cd775676eb)
 
 # TabDash - Modern New Tab Extension
 TabDash replaces Chrome/Edge's/Edge's default new tab with a clean, customizable interface featuring quick links, search functionality, and stunning backgrounds.
