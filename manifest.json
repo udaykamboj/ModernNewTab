@@ -1,5 +1,5 @@
 {
-  "manifest_version": v3,
+  "manifest_version": 3,
   "name": "ModernNewTab",
   "version": "1.0.0",
   "description": "A modern, customizable new tab page with quick links and search functionality",
