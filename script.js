@@ -69,18 +69,28 @@ const searchEngines = {
   Yahoo: "https://search.yahoo.com/search?p=",
 }
 
-// Spotlight backgrounds - all tested and working
 const spotlightBackgrounds = [
   "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop", // Mountain lake reflection
   "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1920&h=1080&fit=crop", // Ocean waves
   "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1920&h=1080&fit=crop", // Mountain sunset
   "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1920&h=1080&fit=crop", // Rolling hills
-  "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=1920&h=1080&fit=crop", // Forest landscape (replacing #5)
+  "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=1920&h=1080&fit=crop", // Forest landscape
   "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1920&h=1080&fit=crop", // Beach paradise
   "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1920&h=1080&fit=crop", // Night sky
-  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop", // Alpine scenery (replacing #8)
   "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop", // Forest trees
-  "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1920&h=1080&fit=crop", // Ocean view (replacing #10)
+  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&h=1080&fit=crop", // Sunrise over mountains
+  "https://images.unsplash.com/photo-1494526585095-c41746248156?w=1920&h=1080&fit=crop", // Desert dunes
+  "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1920&h=1080&fit=crop", // Waterfall
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&h=1080&fit=crop", // Snowy mountain peaks
+  "https://images.unsplash.com/photo-1444044205806-38f3ed106c10?w=1920&h=1080&fit=crop", // Calm lake with reflection
+  "https://images.unsplash.com/photo-1433878455169-4698e60005b1?w=1920&h=1080&fit=crop", // Misty forest
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&h=1080&fit=crop", // Golden field
+  "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=1920&h=1080&fit=crop", // Foggy forest path
+  "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1920&h=1080&fit=crop", // Cliff overlooking ocean
+  "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&h=1080&fit=crop", // Mountain with clouds
+  "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1920&h=1080&fit=crop", // Wildflower meadow
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1920&h=1080&fit=crop", // Coastal cliffs
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&h=1080&fit=crop", // Golden grass field
 ];
 
 const emojiNames = {
