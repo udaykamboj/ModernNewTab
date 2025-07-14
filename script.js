@@ -332,7 +332,8 @@ const emojiNames = {
   "🧶": "Yarn"
 };
 
-// Fill missing emoji names
+const emojiIcons = []; // Empty array to prevent errors
+
 emojiIcons.forEach(icon => {
   if (!emojiNames[icon]) {
     emojiNames[icon] = "Unknown";
