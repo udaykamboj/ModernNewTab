@@ -321,7 +321,6 @@ const emojiNames = {
   "🚑": "Ambulance",
   "🚒": "FireTruck",
   "🚜": "Tractor",
-  "🛻": "PickupTruck",
   "🚐": "Van",
   "📋": "Clipboard",
   "📌": "Pin",
