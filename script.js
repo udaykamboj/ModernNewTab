@@ -341,13 +341,7 @@ const emojiNames = {
   "🧶": "Yarn"
 };
 
-const emojiIcons = []; // Empty array to prevent errors
-
-emojiIcons.forEach(icon => {
-  if (!emojiNames[icon]) {
-    emojiNames[icon] = "Unknown";
-  }
-});
+const emojiIcons = Object.keys(emojiNames);
 
 // Enhanced emoji search functionality
 let filteredEmojis = [...emojiIcons]
