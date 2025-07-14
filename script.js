@@ -90,7 +90,6 @@ const spotlightBackgrounds = [
   "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&h=1080&fit=crop", // Mountain with clouds
   "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1920&h=1080&fit=crop", // Wildflower meadow
   "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1920&h=1080&fit=crop", // Coastal cliffs
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&h=1080&fit=crop", // Golden grass field
 ];
 
 const emojiNames = {
