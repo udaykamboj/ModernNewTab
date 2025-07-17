@@ -1,4 +1,10 @@
-/* 
+{
+  "manifest_version": 3,
+  "name": "ModernNewTab",
+  "version": "1.0.0",
+  "description": "A modern, customizable new tab page with quick links and search functionality",
+  "author": "Uday Kamboj",
+  "credits": "
   ModernNewTab - A minimal and modern new tab extension
   Author: Uday Kamboj
   Repository: https://github.com/udaykamboj/modernnewtab
@@ -9,15 +15,7 @@
   While not legally required, the original author requests that attribution comments remain
   in the top of each source file where included. Keeping credit helps support the project and
   acknowledge the creator's work.
-*/
-
-{
-  "manifest_version": 3,
-  "name": "ModernNewTab",
-  "version": "1.0.0",
-  "description": "A modern, customizable new tab page with quick links and search functionality",
-  "author": "Uday Kamboj",
-  "credits": "Developed and maintained by Uday Kamboj (https://github.com/udaykamboj/modernnewtab)",
+",
   "permissions": ["storage"],
   "chrome_url_overrides": {
     "newtab": "index.html"
