@@ -21,11 +21,11 @@ ModernNewTab is a modern yet simple new tab extension. The whole idea behind the
 
 ```plaintext
 quicktab-extension/
-├── manifest.json          # Extension manifest (permissions, metadata)
+├── manifest.json         # Extension manifest (permissions, metadata)
 ├── index.html            # Main new tab page structure
 ├── styles.css            # All styling and responsive design
 ├── script.js             # Core functionality and storage management
-└── icons/               # Extension icons (16x16 to 128x128)
+└── icons/                # Extension icons (16x16 to 128x128)
     ├── icon16.png
     ├── icon32.png
     ├── icon48.png
