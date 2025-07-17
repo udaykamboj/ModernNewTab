@@ -1,3 +1,19 @@
+[//]: # (ModernNewTab - A minimal and modern new tab extension)
+
+[//]: # (Author: Uday Kamboj)
+
+[//]: # (Repository: https://github.com/udaykamboj/modernnewtab)
+
+[//]: # (Copyright (c) 2025 Uday Kamboj)
+
+[//]: # (Licensed under the MIT License (Modified – Attribution Requested))
+
+[//]: # (While not legally required, the original author requests that attribution comments remain)
+
+[//]: # (in the top of each source file where included.)
+
+[//]: # (Keeping credit helps support the project and acknowledge the creator's work.)
+
 ![image](https://github.com/user-attachments/assets/9cecf532-f967-4a73-bb6a-80cd775676eb)
 
 # ModernNewTab - Modern New Tab Extension
