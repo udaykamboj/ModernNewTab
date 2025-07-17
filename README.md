@@ -130,6 +130,10 @@ No network permissions are required - all data stays local to your browser.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+  
+While not legally required, the original author **requests that attribution comments remain**
+in the top of each source file where included. Keeping credit helps support the project and
+acknowledge the creator's work:
 
 ```
 <!--
